@@ -99,3 +99,15 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     eval_model(args)
+
+
+"""
+python model_vqa.py \
+    --model-path /local/zemel/weights/llava-v1.6-mistral-7b \
+    --question-file \
+    /local/zemel/sruthi/tech_for_underserved/LLaVA_tfus/playground/data/mydata/llava_question.jsonl \
+    --image-folder \
+    /local/zemel/sruthi/tech_for_underserved/LLaVA_tfus/playground/data/mydata/llava_med_logo.png \
+    --answers-file \
+    /local/zemel/sruthi/tech_for_underserved/LLaVA_tfus/playground/data/mydata/llava_answers.jsonl
+"""
